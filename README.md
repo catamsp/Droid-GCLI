@@ -55,7 +55,31 @@ If you prefer, you can use your Gemini API Key. Refer to the [official Gemini CL
 
 ---
 
-## 🔄 Updating
+### 📂 Accessing Internal Storage & Files
+
+During installation, the script automatically sets up your storage permissions. This creates a `~/storage` folder in your terminal that acts as a bridge to your phone's internal memory. 
+
+Here is where your files live inside Termux:
+- **Downloads:** `~/storage/downloads/`
+- **Photos (Camera):** `~/storage/dcim/Camera/`
+- **Documents:** `~/storage/shared/Documents/`
+
+
+
+#### Working with Files in Gemini
+You can pass one or multiple files directly from your phone into the Gemini prompt to have it analyze code, summarize documents, or look at images.
+
+**For example - Analyze a single image:**
+```bash
+gemini "What is the subject of this photo?" ~/storage/dcim/Camera/photo.jpg
+```
+**For example - Summarize multiple documents at once:**
+```bash
+gemini "Summarize the key points from these files" ~/storage/downloads/notes.txt ~/storage/shared/Documents/report.md
+```
+---
+
+### 🔄 Updating
 
 To update the Gemini CLI to the latest version, run:
 
