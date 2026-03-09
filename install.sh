@@ -24,7 +24,7 @@ echo ""
 # Exit on any error
 set -e
 
-# Trap errors to provide helpful context
+# Trap errors to provide helpfull context
 trap 'log_error "An error occurred during installation. Please check the logs." && exit 1' ERR
 
 # Ensure script is running in Termux
