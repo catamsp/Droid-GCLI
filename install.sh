@@ -62,14 +62,11 @@ echo ""
 
 log_info "Step 6: Setting up shared storage access..."
 log_warn "NOTICE: Please click 'Allow' on the Android permission popup if it appears."
-# Only run setup-storage if the directory doesn't already exist
-if [ ! -d ~/storage ]; then
-    termux-setup-storage
-    sleep 2
-    log_success "Storage setup triggered."
-else
-    log_info "Storage access is already configured."
-fi
+# Setting up shared storage access directly
+termux-setup-storage
+sleep 2
+log_success "Storage setup triggered."
+
 echo ""
 
 echo "=========================================="
