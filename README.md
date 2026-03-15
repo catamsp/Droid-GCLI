@@ -98,3 +98,11 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+### 📸 Screenshots
+
+<p align="center">
+  <img src="Screenshot_20260315_225749.jpg" width="30%" alt="Termux View 1">
+  <img src="Screenshot_20260315_225847.jpg" width="30%" alt="Termux View 2">
+</p>
